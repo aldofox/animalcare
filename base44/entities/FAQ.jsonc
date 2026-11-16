@@ -1,0 +1,34 @@
+{
+  "name": "FAQ",
+  "type": "object",
+  "properties": {
+    "pergunta": {
+      "type": "string"
+    },
+    "resposta": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string",
+      "enum": [
+        "geral",
+        "procedimentos",
+        "agendamento",
+        "pagamento"
+      ],
+      "default": "geral"
+    },
+    "ordem": {
+      "type": "number",
+      "default": 0
+    },
+    "ativo": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "pergunta",
+    "resposta"
+  ]
+}

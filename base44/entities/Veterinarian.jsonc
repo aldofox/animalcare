@@ -1,0 +1,28 @@
+{
+  "name": "Veterinarian",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "crmv": {
+      "type": "string"
+    },
+    "especialidade": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "foto_url": {
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "nome"
+  ]
+}

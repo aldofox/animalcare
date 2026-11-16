@@ -1,0 +1,27 @@
+{
+  "name": "Testimonial",
+  "type": "object",
+  "properties": {
+    "autor": {
+      "type": "string"
+    },
+    "pet_nome": {
+      "type": "string"
+    },
+    "texto": {
+      "type": "string"
+    },
+    "nota": {
+      "type": "number",
+      "default": 5
+    },
+    "publicado": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "autor",
+    "texto"
+  ]
+}

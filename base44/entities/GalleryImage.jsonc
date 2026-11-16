@@ -1,0 +1,36 @@
+{
+  "name": "GalleryImage",
+  "type": "object",
+  "properties": {
+    "pet_nome": {
+      "type": "string"
+    },
+    "pet_especie": {
+      "type": "string",
+      "enum": [
+        "cao",
+        "gato",
+        "outro"
+      ],
+      "default": "cao"
+    },
+    "legenda": {
+      "type": "string"
+    },
+    "foto_url": {
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean",
+      "default": true
+    },
+    "ordem": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "pet_nome",
+    "foto_url"
+  ]
+}

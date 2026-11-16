@@ -1,0 +1,42 @@
+{
+  "name": "FinancialRecord",
+  "type": "object",
+  "properties": {
+    "appointment_id": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "valor": {
+      "type": "number"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "receita",
+        "despesa"
+      ],
+      "default": "receita"
+    },
+    "metodo_pagamento": {
+      "type": "string",
+      "enum": [
+        "pix",
+        "credito",
+        "debito",
+        "dinheiro",
+        "transferencia"
+      ],
+      "default": "pix"
+    },
+    "data_pagamento": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "descricao",
+    "valor"
+  ]
+}

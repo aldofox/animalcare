@@ -1,0 +1,75 @@
+{
+  "name": "Appointment",
+  "type": "object",
+  "properties": {
+    "tutor_nome": {
+      "type": "string"
+    },
+    "tutor_email": {
+      "type": "string"
+    },
+    "tutor_telefone": {
+      "type": "string"
+    },
+    "pet_nome": {
+      "type": "string"
+    },
+    "pet_especie": {
+      "type": "string",
+      "enum": [
+        "cao",
+        "gato",
+        "outro"
+      ],
+      "default": "cao"
+    },
+    "pet_raca": {
+      "type": "string"
+    },
+    "service_id": {
+      "type": "string"
+    },
+    "service_nome": {
+      "type": "string"
+    },
+    "vet_id": {
+      "type": "string"
+    },
+    "vet_nome": {
+      "type": "string"
+    },
+    "data_agendada": {
+      "type": "string",
+      "format": "date"
+    },
+    "hora": {
+      "type": "string"
+    },
+    "valor": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pendente",
+        "confirmado",
+        "concluido",
+        "cancelado"
+      ],
+      "default": "pendente"
+    },
+    "observacoes": {
+      "type": "string"
+    },
+    "google_calendar_event_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "tutor_nome",
+    "pet_nome",
+    "service_id",
+    "data_agendada",
+    "hora"
+  ]
+}

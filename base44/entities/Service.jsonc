@@ -1,0 +1,40 @@
+{
+  "name": "Service",
+  "type": "object",
+  "properties": {
+    "nome": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string",
+      "enum": [
+        "higiene",
+        "veterinario",
+        "estetica",
+        "bem_estar"
+      ],
+      "default": "higiene"
+    },
+    "preco": {
+      "type": "number"
+    },
+    "duracao_minutos": {
+      "type": "number",
+      "default": 30
+    },
+    "imagem_url": {
+      "type": "string"
+    },
+    "ativo": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "nome",
+    "preco"
+  ]
+}
